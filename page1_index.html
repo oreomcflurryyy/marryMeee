@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions</title>
+    <link rel="stylesheet" href="page1_styles.css">
+</head>
+<body>
+    <h1>Terms & Conditions</h1>
+    <form id="termsForm">
+        <p>
+            This agreement is entered into by and between:
+            <ul>
+                <li>Partner 1: <input type="text" id="partner1Name" placeholder="Name" required></li>
+                <li>Partner 2: <input type="text" id="partner2Name" placeholder="Name" required></li>
+            </ul>
+        </p>
+
+        <p>
+            <strong>Distance Commitment:</strong> Both partners acknowledge that they currently reside far away from each other across the country. They promise to make diligent efforts to video call each other regularly and  to meet each other in person at regular intervals, as mutually agreed upon.
+            <br>
+            Duration of regular meet up: 
+            <input type="number" id="meetupDuration" placeholder="Enter duration" required min="1">
+            <select id="timeSpan">
+                <option value="days">days</option>
+                <option value="weeks">weeks</option>
+                <option value="months">months</option>
+                <option value="years">years</option>
+            </select>
+        </p>
+
+        <p>
+            <strong>Endurance of Distance:</strong> Both partners affirm that the geographical separation will not weaken or dissolve their relationship. They commit to nurturing their bond through regular communication, trust, and emotional support, despite the challenges posed by long-distance circumstances.
+        </p>
+
+        <p>
+            <strong>Exclusivity and Third-Party Involvement:</strong> Both partners agree to maintain exclusivity in their relationship. Any involvement of a third party in the romantic or emotional sphere will result in severe consequences. The offending party shall have their nose metaphorically/actually broken and shall be subject to a penalty of INR 1,00,00,000/- only, payable to the innocent partner.
+            <br>
+            Consequence of Third-Party Involvement:
+            <select id="noseBreak">
+                <option value="item1">involved parties will have their nose broken</option>
+                <option value="item2">what? do not even look for better options</option>
+                <option value="item3">cheating means death mind you, so no trying</option>
+            </select>
+        </p>
+
+        <p>
+            <input type="checkbox" id="noBreakingUp" required>
+            <label for="noBreakingUp">I agree that breaking up is out of the question.</label>
+        </p>
+
+        <p>
+            <strong>Eternal Love and Intimacy:</strong> Both partners commit to maintaining a deep and lasting love for each other, irrespective of age or circumstances. This includes actively engaging in romantic gestures, regular dates, and intimate moments, including sexual intimacy, throughout the course of their relationship, regardless of their age.
+        </p>
+        
+        <p>
+            <input type="checkbox" id="loveForever" required>
+            <label for="loveForever">I agree to be in love forever, including dates, marriage and sex.</label>
+        </p>
+
+        <p>
+            By entering into this agreement, both partners acknowledge their commitment to sustaining a healthy and enduring long-distance relationship. They understand that adherence to these terms and conditions is essential for the success and longevity of their bond.
+            <br>
+            Date: <input type="date" id="date" required>
+        </p>
+        <div id="buttons">
+            <button id="disagree" type="button" class="button" onclick="disagree()">I Disagree</button>
+            <button id="agree" type="button" class="button" onclick="generateLink()">I Agree</button>
+        </div>
+        <div id="linkContainer"></div>
+        <div id="errorMessage" class="error-message"></div>
+    </form>
+
+    <script src="page1_script.js"></script>
+</body>
+</html>

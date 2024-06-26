@@ -1,0 +1,56 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 50px;
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#buttons {
+    text-align: center;
+}
+
+#errorMessage {
+    color: crimson;
+}
+
+/* Centering the linkContainer vertically */
+#linkContainer {
+    align-items: center;
+}
+
+/* Styling the link */
+#linkContainer a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+#linkContainer a:hover {
+    background-color: #0056b3;
+}
